@@ -1,41 +1,53 @@
-import javax.swing.*;
-import java.awt.*;
+    import javax.swing.*;
+    import java.awt.*;
 
-public class Main {
-    public static void main(String[] args) {
+    // ==================== Mood Message App ====================
+    public class Main {
+        public static void main(String[] args) {
+    // ============ Part A: Create the Window =============
+            JFrame frame = new JFrame("Boba n Chill");
+            frame.setSize(500, 450);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JFrame F1 = new JFrame("Mood Message App");
-        F1.setSize(400, 200);
-        F1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JLabel L1 = new JLabel("How are you feeling today?");
-        JButton b1 = new JButton("Happy");
-        JButton b2 = new JButton("Tired");
-        JButton b3 = new JButton("Motivated");
-        JButton bR = new JButton("Reset");
 
-        JPanel p1 = new JPanel();
-        p1.add(b1);
-        p1.add(b2);
-        p1.add(b3);
-        p1.add(bR);
-        p1.add(L1);
+    // ============ Center Menu Ordering ================
+           JLabel label = new JLabel(" Welcome to Boba n Chill");
+            JButton button1 = new JButton("Taro Tea");
+            JButton button2 = new JButton("Thai Tea");
+            JButton button3 = new JButton ("Matcha Tea");
+            JButton button4 = new JButton("Vietnamese Coffee");
+            JButton button5 = new JButton("Vietnamese Coffee");
+            JButton button6 = new JButton("Vietnamese Coffee");
 
-        // Panel Background Color Change
-        b1.setBackground(Color.yellow);
-        b2.setBackground(Color.GRAY);
-        b3.setBackground(Color.red);
+            JPanel Menupanel = new JPanel(new GridLayout(3,2,10,10));
 
-        // Text Font Change
-        L1.setFont(new Font("Times New Roman", Font.BOLD, 16));
+            Menupanel.add(button1);
+            Menupanel.add(button2);
+            Menupanel.add(button3);
+            Menupanel.add(button4);
+            Menupanel.add(button5);
+            Menupanel.add(button6);
+            frame.add(Menupanel);
 
-        F1.add(p1);
+            frame.setLayout(new BorderLayout());
+            frame.add(Menupanel, BorderLayout.CENTER);
 
-        b1.addActionListener(e -> L1.setText("Thats awesome! Keep Smiling!"));
-        b2.addActionListener(e -> L1.setText("Take a short break and relax."));
-        b3.addActionListener(e -> L1.setText("Go and conquer your goals!"));
-        bR.addActionListener(e -> L1.setText("How are you feeling today?"));
 
-        F1.setVisible(true);
+
+
+
+    // ============ Part C: Add Button Actions =============
+            button1.addActionListener(e->
+                    label.setText("That's awesome! Kep smiling!")
+            );
+            button2.addActionListener(e->
+                    label.setText("Take a short break and relax.")
+            );
+            button3.addActionListener(e->
+                    label.setText("Go conquer your goals!")
+            );
+    // ============ Part D: Display the Window =============
+            frame.setVisible(true);
+        }
     }
-}
