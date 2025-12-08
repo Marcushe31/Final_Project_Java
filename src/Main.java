@@ -6,7 +6,7 @@ public class Main {
 
         // ============ Part A: Create the Window =============
         JFrame frame = new JFrame("Boba n Chill");
-        frame.setSize(700, 625);
+        frame.setSize(700, 645);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
@@ -87,18 +87,27 @@ public class Main {
 
         JPanel bottomBar = new JPanel();
 
+        // place order button
         JButton placeOrder = new JButton("PLACE ORDER");
         placeOrder.setFont(buttonFont);
+
+        // order history button
         JButton history = new JButton("ORDER HISTORY");
         history.setFont(buttonFont);
 
         // remove last BUTTON
         JButton undo = new JButton("REMOVE LAST ITEM");
         undo.setFont(buttonFont);
-        bottomBar.add(undo);
 
+        // total LABEL
+        JLabel total = new JLabel("Total: $0.00");
+        total.setFont(buttonFont);
+
+        // adding components to bottom bar
+        bottomBar.add(undo);
         bottomBar.add(placeOrder);
         bottomBar.add(history);
+        bottomBar.add(total);
 
         orderScreen.add(bottomBar, BorderLayout.SOUTH);
 
@@ -113,6 +122,7 @@ public class Main {
         taro.addActionListener(e-> {
             orderList.append("Taro Milk Tea - $5.50 \n");
             totalPrice[0] += 5.50;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
 
@@ -121,6 +131,7 @@ public class Main {
         thai.addActionListener(e -> {
             orderList.append("Thai Tea - $5.00\n");
             totalPrice[0] += 5.00;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
         });
@@ -128,6 +139,7 @@ public class Main {
         matcha.addActionListener(e -> {
             orderList.append("Matcha Latte - $6.00\n");
             totalPrice[0] += 6.00;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
         });
@@ -135,6 +147,7 @@ public class Main {
         sugar.addActionListener(e -> {
             orderList.append("Brown Sugar Milk Tea - $6.50\n");
             totalPrice[0] += 6.50;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
         });
@@ -142,6 +155,7 @@ public class Main {
         viet.addActionListener(e -> {
             orderList.append("Vietnamese Coffee - $5.75\n");
             totalPrice[0] += 5.75;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
         });
@@ -149,18 +163,30 @@ public class Main {
         oolong.addActionListener(e -> {
             orderList.append("Oolong Milk Tea - $5.25\n");
             totalPrice[0] += 5.25;
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
             frame.revalidate();
             frame.repaint();
         });
 
         // PLACE ORDER BUTTON ACTION LISTENER
+
+        int orderNumber = (int)(Math.random() * 100 ) + 1;
         placeOrder.addActionListener(e -> {
-            JOptionPane.showMessageDialog(frame, "--- Your Order --- \n\n" + orderList.getText() + "\nTOTAL: $"
-                    + String.format("%.2f", totalPrice[0]), "Order Receipt", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(frame,
+                    "----- Your Order ----- \n\n"
+                            + "Order Number: #" + orderNumber
+                            + "\n\n"
+                            + orderList.getText()
+                            + "\nTOTAL: $"
+                            + String.format("%.2f", totalPrice[0])
+                    + "\n\n Thank you for \n choosing Boba N Chill! \n"
+                    + "----------------------------",
+                    "Order Receipt", JOptionPane.INFORMATION_MESSAGE);
 
             // RESTS ALL OF THE TEXT and TOTAL
             orderList.setText("");
             totalPrice[0] = 0;
+            total.setText("Total: $0.00");
         });
 
         // REMOVE BUTTON ACTION LISTENER
@@ -181,6 +207,9 @@ public class Main {
             else if (last.contains("6.50")) totalPrice[0] -= 6.50;
             else if (last.contains("5.75")) totalPrice[0] -= 5.75;
             else if (last.contains("5.25")) totalPrice[0] -= 5.25;
+
+            total.setText("Total: $" + String.format("%.2f", totalPrice[0]));
+
         });
 
         frame.setVisible(true);
