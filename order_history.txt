@@ -1,0 +1,202 @@
+Order Number: #39
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Brown Sugar Milk Tea - $6.50
+Order Number: #39
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Brown Sugar Milk Tea - $6.50
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Order Number: #27
+
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Order Number: #27
+
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+
+ Order Number: #41
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+
+ Order Number: #74
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+
+ Order Number: #98
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+
+ Order Number: #61
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Thai Tea - $5.00
+Taro Milk Tea - $5.50 
+
+ Order Number: #10
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Vietnamese Coffee - $5.75
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+ Order Number: #76
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+TOTAL: $19.50
+---------------------------- 
+ 
+
+ Order Number: #41
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+TOTAL: $39.00
+---------------------------- 
+ 
+
+ Order Number: #51
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+Oolong Milk Tea - $5.25
+Vietnamese Coffee - $5.75
+Matcha Latte - $6.00
+Brown Sugar Milk Tea - $6.50
+TOTAL: $43.00
+---------------------------- 
+ 
+
+ Order Number: #88
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Matcha Latte - $6.00
+Brown Sugar Milk Tea - $6.50
+Brown Sugar Milk Tea - $6.50
+TOTAL: $29.50
+---------------------------- 
+ 
+
+ Order Number: #66
+Oolong Milk Tea - $5.25
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+TOTAL: $17.25
+---------------------------- 
+ 
+
+ Order Number: #10
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Matcha Latte - $6.00
+Brown Sugar Milk Tea - $6.50
+TOTAL: $34.00
+---------------------------- 
+ 
+
+ Order Number: #31
+Taro Milk Tea - $5.50 
+Brown Sugar Milk Tea - $6.50
+Vietnamese Coffee - $5.75
+TOTAL: $17.75
+---------------------------- 
+ 
+
+ Order Number: #73
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+Matcha Latte - $6.00
+TOTAL: $54.00
+---------------------------- 
+ 
