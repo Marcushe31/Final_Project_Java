@@ -4,6 +4,8 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
+
+        // HERE AND BELOW, main setup for GUI components (buttons, panels, frames, etc).
         JFrame frame = new JFrame("Boba n Chill");
         frame.setSize(700, 645);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -15,31 +17,32 @@ public class Main {
 
         // HOME SCREEN
         JPanel homePanel = new JPanel(new BorderLayout());
-        JLabel title = new JLabel("Welcome to Boba n Chill", SwingConstants.CENTER);
+        JLabel title = new JLabel("Welcome to Boba n Chill", SwingConstants.CENTER); //alignment to CENTER
         title.setFont(new Font("Arial", Font.BOLD, 26));
-        homePanel.add(title,BorderLayout.NORTH);
+        homePanel.add(title,BorderLayout.NORTH); // adding title to NORTH.
 
         //Start Buttons
         JButton startButton = new JButton("Start your order!");
         startButton.setFont(new Font("Arial", Font.BOLD, 20));
-        homePanel.add(startButton, BorderLayout.SOUTH);
+        homePanel.add(startButton, BorderLayout.SOUTH); //adding start button to SOUTH
 
         // adding homescreen boba image (boba.png)
         ImageIcon boba = new ImageIcon("boba.png");
         JLabel imageLabel = new JLabel(boba);
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        homePanel.add(imageLabel, BorderLayout.CENTER);
+        homePanel.add(imageLabel, BorderLayout.CENTER); // adding the homepanel to CENTER alignment,
 
         // ORDER SCREEN setup
         JPanel orderPanel = new JPanel();
-        orderPanel.setLayout(new GridLayout(3,2,8,8));
-        Font buttonFont = new Font("Arial" , Font.BOLD, 14);
+        orderPanel.setLayout(new GridLayout(3,2,8,8)); // (3 x 2), so there are 6 TOTAL drinks
+        Font buttonFont = new Font("Arial" , Font.BOLD, 14); //setsfont
 
         // ORDER list display (on the right sidebar)
         JTextArea orderList = new JTextArea();
         orderList.setEditable(false);
         orderList.setFont(new Font("Arial", Font.BOLD, 14));
-        final double[] totalPrice = {0};
+        final double[] totalPrice = {0}; // creates array to store total price
+        // @Jeremy, make sure to remember to SUBTRACT the total price when the removeitem button is clicked. Otherwise the total will remain unchanged.
 
         // new file that stores the order history
         String historyFile = "order_history.txt";
@@ -56,8 +59,9 @@ public class Main {
         JButton viet = new JButton("Vietnamese Coffee - $5.75");
         viet.setFont(buttonFont);
         JButton oolong = new JButton("Oolong Milk Tea - $5.25");
-
         oolong.setFont(buttonFont);
+
+        //adding buttons to order panel
         orderPanel.add(taro);
         orderPanel.add(thai);
         orderPanel.add(matcha);
@@ -171,14 +175,16 @@ public class Main {
 
         // REMOVE BUTTON ACTION LISTENER
         undo.addActionListener(e-> {
-            String text = orderList.getText().trim();
-            if(text.isEmpty()) return;
-            String[] lines = text.split("\n");
-            String last = lines [lines.length - 1];
+            String text = orderList.getText().trim(); //gets all the text displayed in ORDER LIST. ADDITIONALLY, trim removes any spaces at top/bottom. stores in string var text.
+            if(text.isEmpty()) return; // if the order list is empty, it will stop the method.
+            String[] lines = text.split("\n"); //this will SPLIT THE TEXT BLOCK INTO INDIVIDUAL LINES
+            String last = lines [lines.length - 1]; //gets the lsat item in the list, which will be REMOVED..
+            // remember to subtract from total when remove button is clicked, keep tally for this later !!
             orderList.setText(text.substring(0, text.lastIndexOf("\n")));
+            // ^ this is what ACTUALLY REMOVES THE LAST LINE from the text.
 
             // updates total price depending on price of last
-            if (last.contains("5.50")) totalPrice[0] -= 5.50; // try to update? must be a more efficient way
+            if (last.contains("5.50")) totalPrice[0] -= 5.50; // try to update... must be a more efficient way
             else if (last.contains("5.00")) totalPrice[0] -= 5.00;
             else if (last.contains("6.00")) totalPrice[0] -= 6.00;
             else if (last.contains("6.50")) totalPrice[0] -= 6.50;
@@ -199,19 +205,19 @@ public class Main {
 
             StringBuilder historyText = new StringBuilder();
             // br reads file line by line UNTIL THERE ARE NO MORE LINES, then it will add each line to stringBuilder**
-            try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            try (BufferedReader br = new BufferedReader(new FileReader(file))) { // try catch incase no history
                 String line;
-                while ((line = br.readLine()) != null) {
-                    historyText.append(line).append("\n");
+                while ((line = br.readLine()) != null) {  //br.readLine reads a line, when the file is empty/has no more lines, it will return null
+                    historyText.append(line).append("\n"); // also, while loop runs until there are NO lines left.
                 }
-            } catch (IOException ex) { //fail
+            } catch (IOException ex) { //fail catch
                 JOptionPane.showMessageDialog(frame,
                         "Error reading order history.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
             JTextArea historyArea = new JTextArea(historyText.toString());
             historyArea.setEditable(false); // a USER CANNOT type inside of it, they can only read it
-            historyArea.setFont(new Font("Arial", Font.BOLD, 12));
+            historyArea.setFont(new Font("Arial", Font.BOLD, 12)); //setsfont
 
             // scrolling pane in case the history extends (long history)
             JScrollPane historyScroll = new JScrollPane(historyArea);
