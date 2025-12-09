@@ -200,3 +200,14 @@ Matcha Latte - $6.00
 TOTAL: $54.00
 ---------------------------- 
  
+
+ Order Number: #48
+Matcha Latte - $6.00
+Vietnamese Coffee - $5.75
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+Oolong Milk Tea - $5.25
+TOTAL: $32.75
+---------------------------- 
+ 

@@ -31,6 +31,8 @@ public class Main {
         JLabel imageLabel = new JLabel(boba);
         imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
         homePanel.add(imageLabel, BorderLayout.CENTER); // adding the homepanel to CENTER alignment,
+        // ALSO MAKE SURE TO DOWNLOAD PICTURE OF "BOBA VARIETY IMAGE" ONTO LOCAL COMPUTER (INTO THE FILE),
+        // OTHERWISE THE IMAGE OF THE BOBA ON THE HOME SCREEN WILL NOT SHOW!!!
 
         // ORDER SCREEN setup
         JPanel orderPanel = new JPanel();
